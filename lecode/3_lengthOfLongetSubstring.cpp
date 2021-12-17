@@ -15,7 +15,7 @@ public:
                 occ.erase(s[i - 1]);
             }
 
-            while (right_point + 1 < n && occ.count(s[right_point + 1])) {
+            while (right_point + 1 < n && !occ.count(s[right_point + 1])) {
                 occ.insert(s[right_point + 1]);
                 ++right_point;
             }
